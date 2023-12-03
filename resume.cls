@@ -2,10 +2,18 @@
 \ProvidesExplClass{resume}
 {2022-12-26}{0.1.0}{Another Resume Class by Feng Kaiyu}
 
-% Keep Quiet
-\PassOptionsToPackage{quiet}{xeCJK}
-\ProcessOptions\relax
 \LoadClass[zihao=5,autoindent=0.5em]{ctexart}
+
+% Manually add graphicx
+\RequirePackage{graphicx}
+% load svg
+\RequirePackage{svg}
+% ifthenelse
+\RequirePackage{xifthen}
+% load icons
+\RequirePackage{fontawesome5}
+% to place tongji-logo
+\RequirePackage[absolute,overlay]{textpos}
 
 % Define paper size.
 \RequirePackage{geometry}
@@ -123,16 +131,16 @@
 % #2: The title of the section.
 % #3(optional): The additional information of the section.
 % #4(optional): The right-aligned content, which normally will be the date range.
-\NewDocumentCommand{\ResumeItem}{omoo}
+\NewDocumentCommand{\ResumeItem}{omooo}
 {
   {
     \zihao{-4}
-    \par 
+    \par
     \noindent
     {
       \heiti
       #2
-      
+
       \IfValueTF{#1}
       {
         \pdfbookmark[2]{#1}{subsec:\arabic{resumebookmark}}
@@ -143,16 +151,18 @@
       \stepcounter{resumebookmark}
     }
     \IfValueT{#3}{
-      \tl_if_empty:nF {#3} {
-        \ | 
-        \textit{
-          #3
-        }
+      \ |
+      \textit{
+        #3
       }
     }
     \hfill
     \IfValueT{#4}{
       #4
+      \
+    }
+    \IfValueT{#5}{
+      #5
     }
     \par
   }

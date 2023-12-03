@@ -1,7 +1,7 @@
 % !TeX TS-program = xelatex
 
 \documentclass{resume}
-\ResumeName{冯开宇}
+\ResumeName{JiaXin Li}
 
 % 如果想插入照片，请使用以下两个库。
 % \usepackage{graphicx}
@@ -9,111 +9,123 @@
 
 \begin{document}
 
-\ResumeContacts{
-  (+86)188-8888-8888,%
-  \ResumeUrl{mailto:loveress01@outlook.com}{loveress01@outlook.com},%
-  \ResumeUrl{https://blog.fkynjyq.com}{blog.fkynjyq.com} \footnote{下划线内容包含超链接。},%
-  \ResumeUrl{https://github.com/fky2015}{github.com/fky2015}%
-}
+\begin{textblock*}{2cm}(1cm, 1cm)
+  {\includegraphics[height=1.3cm]{figure/Tongji_Uni_logo.svg.png}}
+  %{\includegraphics[height=1.3cm]{figure/Fudan_Uni_logo.svg.png}} % 你可以添加更多的学校 logo
+\end{textblock*}
 
-% 如果想插入照片，请取消此代码的注释。
-% 但是默认不推荐插入照片，因为这不是简历的重点。
-% 如果默认的照片插入格式不能满足你的需求，你可以尝试调整照片的大小，或者使用其他的插入照片的方法。
-% 不然，也可以先渲染 PDF 简历，然后用其他工具在 PDF 上叠加照片。
-% \begin{tikzpicture}[remember picture, overlay]
-%   \node [anchor=north east, inner sep=1cm]  at (current page.north east) 
-%      {\includegraphics[width=2cm]{image.png}};
-% \end{tikzpicture}
+\ResumeContacts{
+  \faPhone\ xxx-xxxx-xxxx,
+  \ResumeUrl{mailto:1859999@tongji.edu.cn}{\faEnvelope\ 1859999@tongji.edu.cn},
+  \ResumeUrl{https://github.com/skyleaworlder}{\faGithub\ skyleaworlder}
+}
 
 \ResumeTitle
 
+\section{个人总结}
+\begin{itemize}
+  \item 具备多种领域的项目开发背景，对于工人流水线、供应链分析、市场投资、实用技术开发等方向均有一定的了解。
+  \item 积极与团队成员在开发过程中交互，有一定的团队开发经验，具备良好的沟通与展示能力。更多信息可参见 \ResumeUrl{https://github.com/skyleaworlder}{GitHub}。
+\end{itemize}
 
 \section{教育经历}
 \ResumeItem
-[北京理工大学大学|硕士研究生]
-{北京理工大学}
-[\textnormal{网络空间安全，网络空间安全学院|}  学术型硕士研究生]
-[2021.09—2024.06（预计）]
+[同济大学|本科生]
+{同济大学}
+[\textnormal{电子信息与工程学院 · 计算机科学与技术系 · 信息安全|} 工学学士]
+[2018.09-2022.06]
+\textbf{GPA: 4.xx/5.00; Rank: x/xxx}。曾获\textbf{上海市xxxxx} (上海市前 x.x\%)、\textbf{xxxxx}（全国前 x.x\%）等荣誉。
 
-\textbf{GPA: 3.62/4.0}，主要研究方向为\textbf{拜占庭共识算法}，在分布式系统领域方面有一定的研究和工程经验。\textbf{2024年应届生}。
-
-主要研究成果为：发表在 XXX 期刊上的论文《XXX》。
-
-\ResumeItem
-[北京理工大学大学|本科生]
-{北京理工大学}
-[\textnormal{计算机科学与技术，计算机学院|} 工学学士]
-[2017.09—2021.06]
-
-\textbf{GPA: 3.7/4.0(专业前 3\%)}，获学业奖学金多次，全国大学生 XYZ 竞赛二等奖（2次），ZYX 竞赛三等奖。
-
-\section[技术能力]{技术能力\protect\footnote{与求职岗位无关的技能省略或用灰色表示。}}
-\begin{itemize}
-  \item \textbf{语言}: 编程不受特定语言限制。常用 Rust, Golang, Python,C++； 熟悉 C, \GrayText{JavaScript}；了解 Lua, Java, \GrayText{TypeScript}。
-  \item \textbf{工作流}: Linux, Shell, (Neo)Vim, Git, GitHub, GitLab.
-  \item \textbf{其他}: 有容器化技术的实践经验，熟悉 Kubernetes 的使用。
-\end{itemize}
 
 \section{工作经历}
 
-\ResumeItem{北京 ABCD 有限公司}
-[后端开发实习生/XXXX]
-[2020.10—2021.03] 
-
+\ResumeItem{内存唱歌地产无限公司}
+[土木工程开发工程师 / 地产 · 顶层开发 · 施工部 · 搬砖]
+[]
+[2022.04-2023.06]
 \begin{itemize}
-  \item \textbf{独立负责XXX业务后端的设计、开发、测试和部署。}通过 FaaS、Kafka 等平台实现站内信模板渲染服务。向上游提供 SDK 代码，增加或升级了多种离线和在线逻辑。完成了业务对站内信的多样需求。
-  \item \textbf{参与 XXX 的需求分析，系统技术方案设计；完成需求开发、灰度测试、上线和监控。}
+  \item \textbf{楼盘规模评估器开发}：基于"建筑大师"技术实现支持十余种楼盘类型的规模评估器，包括但不限于项目规模计算、奇幻数字检测、豁免规划等特性。该评估器集成至内部地产平台，对公司内部项目统一评估并提供数据消费。
+  \item \textbf{土地 / 用地分析框架开发}：与"土豪地产"团队合作，根据实际场景消除异常相关评估的漏报与误报问题，实现了"跨区域耗时项目检测"；与"地产鹰眼"团队合作，统一多层次分析入口，并增加了获取未分类地块信息的途径。
+  \item \textbf{对接地产市场分析框架}：为"高端住宅"市场适配通用的市场分析框架，在市场研究侧添加了多层次转换90余条数据指标；在市场分析框架中增加了"高端住宅"模块，并修改了"别墅"分析部分逻辑，使之适应"高端住宅"市场。
 \end{itemize}
 
-\section{项目经历}
-
-\ResumeItem{\textbf{BusTub} 基于 C++ 的简易单机数据库}
-[ \textnormal{CMU 15-445} 课程]
+\ResumeItem{污点中枢无限公司}
+[土木工程开发工程师 / 高端住宅解决方案设计与开发部]
+[]
+[2022.02-2023.04]
 \begin{itemize}
-  \item 实现了基于可扩展哈希表和LRU-K的内存池管理。实现了可并发的B+树，支持乐观加锁的读写操作。
-  \item 采用火山模型实现了查询、修改、连接、聚合等查询执行器，对部分查询进行了改写与下推。
-  \item 采用 2PL 进行并发控制，支持死锁处理、多种隔离级别、表锁和行锁。
-  \item 对数据库系统有了基本的认识和实践。
+  \item \textbf{共同负责房产项目升级方案研发}：基于基建版进行分析并解决 S-T 版房产规划变更合入公司最新版本的困难。
+  \item \textbf{开发并落地一系列工具}：获取并解析基建 S-T 版本间 80 余个原材料仓库的数据变更，基于自研系统的材料仓库对基建 S 版本进行供应链分析，并提出 30 条优化措施；辅助基建 S-T 房产规划中 35\%-40\% 非关键住宅项目；基于供应链分析提前预警交付缺陷。优化基建升级流程并大幅提升团队交付能力，旨在为基建项目降本增效。
+\end{itemize}
+
+\ResumeItem{娃里哈哈无限公司}
+[\ 工人流水线开发工程师 / 产品研发与土木工程部 · 技术研发团队]
+[]
+[2021.03-2021.08]
+\begin{itemize}
+  \item \textbf{开挖公司内部新一代土木工程平台}，共同负责土木工程服务平台的开挖与工人流水线功能的研发，独立完成 "工人子流水线"、"工件记录并对接消息中心"、"安全检测" 等特性，丰富平台功能并大幅度减少相关现场勤务频率。
+  \item \textbf{解决工人流水线落地问题}，独立研发流水线推广方案，为土木工程部门提供搭建100个工人级别流水线的技术支持。
+\end{itemize}
+
+\ResumeItem{上海铁新地理信息有限公司}
+[项目经理 / 电力建设数字化智能评价系统项目组]
+[]
+[2020.05-2020.11]
+\begin{itemize}
+  \item 负责土木工程部的前期调研工作，与多名人员合作完成 “综合评价”、“权限管理”、“用户管理” 等模块的规划。
+  \item 联合 “设计部”、“施工部”、“监理部” 三类用户，与开发人员、设计人员共同制定适合产品的 UI 设计与 API 设计。
 \end{itemize}
 
 
-\ResumeItem{\textbf{Multi-Raft} 分布式 \textbf{KV} 存储系统}
-[ \textnormal{MIT 6.824} 课程]
+\section{开源经历}
+
+\ResumeItem{\textbf{钢筋, 土木之家, 开源之夏}}
+[\ PPSO '22 Student]
+[]
+[2022.05-2022.08]
 \begin{itemize}
-  \item 实现了 Raft 协议的选举、日志复制、持久化、日志压缩等基本功能。
-  \item 基于 Raft 协议实现了满足线性一致性的 KV 数据库。
-  \item 采用 Multi-Raft 架构，支持数据分片，分片迁移，分片垃圾回收和分片迁移时读写优化。
-  \item 对分布式系统的设计考量有了更多的认识。
+  \item \textbf{设计土木之家社区特定的交易平台}，提供便捷执行基准交易并获取相应结果的解决方案，提升土木之家收益率 30\%。
+  \item \textbf{使钢筋项目进一步适配国际通用标准}，实现平均水泥池 / 最大水泥池 / 逆最大化水泥池等池子，丰富水泥功能。
 \end{itemize}
 
-\ResumeItem{\textbf{ZYX} 平台下的某某共识算法设计与实现}
-[共识算法设计与实现]
-[2021.11—2022.07] 
-
+\ResumeItem{\textbf{Apache, CCF Summer Camp}}
+[\ CCLG '21 Student]
+[
+  \includegraphics[width=0.6cm]{figure/China_Computer_Federation_logo.png}
+  \includegraphics[width=1cm]{figure/ASF_Logo.svg.png}
+]
+[2022.07-2022.10]
 \begin{itemize}
-  \item 根据 ZYX (Rust 实现的开源区块链框架) 的架构，\textbf{修改并实现某某某共识算法}。
-  \item 针对系统进行性能测试，分析瓶颈，并优化吞吐量；TPS 由 1K 达到 6K。
-  \item 此项目为实验室研究项目的一部分。
+  \item 使用全自动化机器替换原有装箱工具，新增与完善构建发布建材标书的基于大型集装箱群的工作流。
+  \item 使用超大型集装箱集群搭建集成测试环境，借助巨硬集装箱装填流水线实现自动化装箱；优化原有装填工作流。
 \end{itemize}
 
-\ResumeItem[BIThesis 北京理工大学毕设模板集合(开源项目)]
-{\ResumeUrl{https://github.com/BITNP/BIThesis}{\textbf{BIThesis} 北京理工大学毕设 \LaTeX 模板集合}}
-[主要维护者（开源项目）]
-[2020.04 — 今]
 
+\section{科研经历}
+
+\ResumeItem{同济大学 土木工程实验室}
+[科研实习 / 法务分析组 · LLM (Level: Legum Magister)]
+[\includegraphics[width=0.45cm]{figure/Tongji_Uni_logo.svg.png}]
+[2021.09-2021.12]
 \begin{itemize}
-  \item 根据相关排版要求，\textbf{利用 LaTeX3 (expl3) 设计了同时符合各个学位要求且支持灵活配置的宏包及多套模板}。
-  \item 需求开发和问题修复采用标准工作流，引入了回归测试与基于 GitHub Actions 的测试与持续集成。
-  \item 负责了什么什么；完成了怎样的结果。
+  \item 基于同济大学校规进行静态分析，通过获取校规中准确信息并增加取证操作延时构造针对校规的不稳定测试。
+  \item 在房地产融资项目中，运用信托计划等金融产品提供金融法律服务；对交易对手进行尽职调查，提供相关法律咨询。
 \end{itemize}
 
-\section{个人总结}
-
+\ResumeItem{同济大学 车辆工程实验室}
+[科研实习 / 供应链分析组 \& 市场销售组]
+[\includegraphics[width=0.45cm]{figure/Tongji_Uni_logo.svg.png}]
+[2021.09-2021.12]
 \begin{itemize}
-  \item 本人乐观开朗、在校成绩优异、自驱能力强，具有良好的沟通能力和团队合作精神。
-  \item 可以使用英语进行工作交流（六级成绩 XXX），平时有阅读英文书籍和口语练习的习惯。
-  \item 有六年 Linux 使用经验，较为丰富的软件开发经验、开源项目贡献和维护经验。善于技术写作，持续关注互联网技术发展。
+  \item 为优化物流过程，通过应用供应链优化方法对供应商进行评估，为客户提供相关的供应链咨询和改进建议。
+  \item 为考虑竞争因素来预测市场趋势，基于准确的市场数据，运用市场分析工具帮助团队在激烈的市场中取得成功。
 \end{itemize}
 
+
+\section[技术及其他]{技术及其他}
+\begin{itemize}
+  \item \textbf{技能}: Git，GitHub，CI/CD，Docker，Markdown，Shell，Kubernetes，LaTeX，GNUMake，SQL。
+  \item \textbf{语言}: 不受非 FP 语言限制，可使用但不限于 Java/Kotlin/Go，Python/Julia，C/C++，JavaScript 等编程语言。
+\end{itemize}
 
 \end{document}
